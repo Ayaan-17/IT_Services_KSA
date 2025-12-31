@@ -1,17 +1,25 @@
 export default function ServiceCard({ title, description }) {
   return (
-    <div className="relative bg-white border border-slate-200 rounded-xl p-6 hover:shadow-xl transition hover:-translate-y-1">
-      {/* top accent */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-saudi-green rounded-t-xl" />
+    <div className="group bg-emerald-50/95 backdrop-blur-xl border border-white/40 rounded-2xl p-7 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+      {/* Accent bar */}
+      <div className="h-1 w-14 bg-emerald-600 rounded-full mb-5" />
 
-      <h3 className="mt-4 text-lg font-semibold text-saudi-dark">{title}</h3>
+      {/* Title */}
+      <h3 className="text-lg font-semibold text-emerald-900 leading-snug">
+        {title}
+      </h3>
 
-      <p className="mt-3 text-sm text-saudi-text leading-relaxed">
+      {/* Description */}
+      <p className="mt-3 text-slate-700 text-sm leading-relaxed">
         {description}
       </p>
 
-      <div className="mt-4 text-sm font-medium text-saudi-teal">
-        Learn more →
+      {/* CTA */}
+      <div className="mt-5 inline-flex items-center text-emerald-700 font-medium text-sm group-hover:text-emerald-900 transition">
+        Learn more
+        <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">
+          →
+        </span>
       </div>
     </div>
   );

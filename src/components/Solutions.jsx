@@ -25,20 +25,24 @@ export default function Solutions() {
   ];
 
   return (
-    <section id="services" className="max-w-7xl mx-auto px-6 py-20">
-      <h2 className="text-3xl font-bold text-center text-saudi-dark">
-        Our Solutions
-      </h2>
+    <section id="services" className="bg-saudi-deep py-20 md:py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
+          Our Solutions
+        </h2>
 
-      <p className="mt-4 text-center text-slate-600 max-w-3xl mx-auto">
-        Built specifically for cafés, restaurants, and local businesses across
-        Saudi Arabia.
-      </p>
+        <p className="mt-4 text-center text-saudi-light max-w-3xl mx-auto">
+          Built specifically for cafés, restaurants, and local businesses across
+          Saudi Arabia.
+        </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-        {solutions.map((solution, index) => (
-          <ServiceCard key={index} {...solution} />
-        ))}
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          {solutions.map((solution, index) => (
+            <ServiceCard key={index} {...solution} />
+          ))}
+        </div>
       </div>
     </section>
   );

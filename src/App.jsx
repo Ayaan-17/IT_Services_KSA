@@ -7,13 +7,13 @@ import VisionMissionValues from "./components/VisionMissionValues";
 
 export default function App() {
   return (
-    <>
+    <div className="bg-saudi-page min-h-screen">
       <Navbar />
       <Hero />
       <Solutions />
       <Projects />
       <VisionMissionValues />
       <Footer />
-    </>
+    </div>
   );
 }

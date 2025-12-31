@@ -5,12 +5,20 @@ export default {
     extend: {
       colors: {
         saudi: {
-          green: "#0f766e",
-          teal: "#115e59",
-          gold: "#c9a227",
-          dark: "#0f172a",
-          text: "#334155",
-          light: "#f0fdfa",
+          primary: "#0F766E", // Brand green (CTAs, highlights)
+          secondary: "#115E59", // Hover / emphasis
+          dark: "#0F172A", // Headings
+          text: "#334155", // Body text
+          muted: "#64748B", // Secondary text
+
+          /* ✅ NEW BACKGROUND SYSTEM */
+          page: "#F5FAF9", // App/page background (not white)
+          section: "#E6F4F1", // Light section background
+          surface: "#D4EEE9", // Cards-on-light / hero background
+          deep: "#0B4F4A", // Dark sections (solutions, footer)
+
+          border: "#CFE3DF", // Soft green border
+          gold: "#C9A227", // Accent (sparingly)
         },
       },
     },
