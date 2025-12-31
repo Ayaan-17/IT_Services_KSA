@@ -32,7 +32,7 @@ export default function Solutions() {
           Our Solutions
         </h2>
 
-        <p className="mt-4 text-center text-saudi-light max-w-3xl mx-auto">
+        <p className="mt-4 text-center text-white">
           Built specifically for cafés, restaurants, and local businesses across
           Saudi Arabia.
         </p>
