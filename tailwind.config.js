@@ -3,6 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      animation: {
+        "float-slow": "float 20s ease-in-out infinite",
+      },
+      keyframes: {
+        float: {
+          "0%": { transform: "translate(-50%, -50%) scale(1)" },
+          "50%": { transform: "translate(-50%, -52%) scale(1.03)" },
+          "100%": { transform: "translate(-50%, -50%) scale(1)" },
+        },
+      },
       colors: {
         saudi: {
           primary: "#0F766E", // Brand green (CTAs, highlights)

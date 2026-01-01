@@ -54,7 +54,7 @@ export default function Projects() {
         </div>
       </div>
       {/* soft bottom fade to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t  to-transparent pointer-events-none" />
     </section>
   );
 }
